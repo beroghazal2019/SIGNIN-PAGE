@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-image: url(.//photo_2023-04-07_00-10-25.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+  /* Small */
+  @media (max-width: 767px) {
+    .parent .container {
+      width: 750px;
+      padding-left: 0;
+      padding-right: 0;
+      
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+  }
+  .nav{
+    background: transparent;
+    border: 0px solid rgba(255, 255 ,223, 0.5);
+    backdrop-filter: blur(8px);
+    margin: 0;
+  }
+  .nav .container{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav .container .navb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .container .navb ul {
+    list-style: none;
+    margin-right: 20px;
+    padding: 10px;
+    
+    display: flex;
+
+}
+.nav .container .navb ul a {
+margin-right: 18px;
+font-size: 11px;
+font-family: cursive;
+text-decoration: none;
+color: white;
+}
+.nav .container .navb input {
+    height: 28px;
+    width: 56px;
+    color: white;
+    background-color: transparent;
+    outline: red;
+    border: 2px solid red;
+    border-radius: 19px;
+}
+.nav .container .tit {
+    color: white;
+    font-family: cursive;
+
+}
+.parent{
+    position: relative;
+    margin: 100px auto;
+    width: 430px;
+    height: 507px;
+    color: #fff;
+    border-radius: 20px;
+    transition: .3s;
+    animation-name: move;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255,.5);
+    backdrop-filter: blur(17px);
+    display: flex;
+    transform: scale(0.8);
+    box-shadow: 0px 0px 13px 0px white;
+}
+@media (max-width: 767px) {
+    .parent  {
+      width: 400px;
+    
+     
+    }
+  }
+.parent .card{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.parent .card label{
+    display: flex;
+    
+    align-self: flex-start;
+    margin-left: 73px;
+}
+.parent .card .fac {
+    color: white;
+    font-size: 13px;
+    width: 302px;
+    font-family: cursive;
+    padding-left: 18px;
+    height: 22px;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 27px;
+    border-bottom: 3px solid #d6c5c5;
+    margin-top: -2px;
+}
+::placeholder{
+    margin-left: 10px;
+    color: rgb(202, 192, 192);
+    font-size: 17px;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+.parent .card .fac:checked{
+    border: none;
+}
+.parent .card .title-card{
+    align-self: auto;
+    position: absolute;
+    top: 45px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: cursive;
+}
+.parent .card i{
+    color: white;
+    align-self: auto;
+    position: absolute;
+    top: 10px;
+    font-size: 31px;
+}
+.card:hover{
+    transform: scale(0.95);
+    border-radius: 20px;
+   
+}
+.parent:hover{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes move{
+ 0%{
+    box-shadow: 0px 0px 40px 1px rgb(7, 253, 48);
+ }
+ 25%{
+    box-shadow: 0px 0px 40px 1px rgb(92, 160, 227);
+ }
+ 50%{
+    box-shadow: 0px 0px 40px 1px rgb(253, 25, 9);
+ }
+ 75%{
+    box-shadow: 0px 0px 40px 1px rgb(192, 255, 3);
+ }
+ 100%{
+    box-shadow: 0px 0px 40px 1px rgb(171, 255, 185);
+ }
+}
+.face {
+    position: relative;
+    top: 24px;
+}
+#ii{
+    position: absolute;
+    left: 7px;
+    top: 43px;
+}
+#i2{
+       position: absolute;
+       top: 120px;
+       left: 7px;
+       font-size: 36px;
+}
+.face input {
+    width: 286px;
+    height: 40px;
+    padding-left: 54px;
+    margin-top: 39px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background-color:#135a99;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: cursive;
+    justify-content: center;
+}
+.card .forg a {
+    font-weight: 800;
+    color: white;
+}
+

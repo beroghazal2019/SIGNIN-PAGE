@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <div class="nav-bar">
+                <h3>ARTS</h3>
+                <ul>
+                    <li>HOME</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                   
+                  <a href="" ><input type="button" value="login" ></a>  
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="container">
+        <div class="card">
+            <i class='bx bx-color'></i>
+            <p>sign in</p>
+           
+            <input class="fac" type="email" value="enter your email" >
+            <input class="fac" type="text" value="enter your password">
+            <div class="face">
+                <input  type="button" value="facebook"  >
+                <input  type="button" value="instagram" >
+                <i class='bx bxl-facebook-circle' id="ii"></i>
+                <i class='bx bxl-instagram-alt' id="i2"></i>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    
+    
+</body>
+</html>
+............................................//
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-image: url(.//photo_2023-04-07_00-10-25.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 767px) {
+    .container {
+      width: 750px;
+      
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+.parent{
+    position: relative;
+    margin: 200px auto;
+    width: 400px;
+    height: 500px;
+    color: #fff;
+    border-radius: 20px;
+    transition: .3s;
+    animation-name: move;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255,.5);
+    backdrop-filter: blur(7px);
+    display: flex;
+}
+.parent .card{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.parent .card p{
+    align-self: auto;
+    position: absolute;
+    top: 45px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: cursive;
+}
+.parent .card .fac {
+    color: white;
+    font-size: 16px;
+    width: 341px;
+    font-family: cursive;
+    padding-left: 18px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 36px;
+    border-bottom: 3px solid #d6c5c5;
+}
+.parent .card i{
+    color: white;
+    align-self: auto;
+    position: absolute;
+    top: 10px;
+    font-size: 31px;
+}
+.card:hover{
+    transform: scale(0.95);
+    border-radius: 20px;
+    color: #8364f4;
+}
+.parent:hover{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes move{
+ 0%{
+    box-shadow: 0px 0px 40px 1px rgb(7, 253, 48);
+ }
+ 25%{
+    box-shadow: 0px 0px 40px 1px rgb(92, 160, 227);
+ }
+ 50%{
+    box-shadow: 0px 0px 40px 1px rgb(253, 25, 9);
+ }
+ 75%{
+    box-shadow: 0px 0px 40px 1px rgb(192, 255, 3);
+ }
+ 100%{
+    box-shadow: 0px 0px 40px 1px rgb(171, 255, 185);
+ }
+}
+.face {
+    position: relative;
+}
+#ii{
+    position: absolute;
+    left: 7px;
+    top: 43px;
+}
+#i2{
+    position: absolute;
+    
+    top: 42px;
+    right: 115px;
+}
+.face input {
+    width: 153px;
+    height: 40px;
+    padding-left: 16px;
+    margin-top: 39px;
+    border: none;
+    background-color: #4090ff;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: cursive;
+}
